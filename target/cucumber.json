@@ -1,0 +1,434 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Senaryo ;"
+      },
+      {
+        "line": 2,
+        "value": "#1- siteyi açınız."
+      },
+      {
+        "line": 3,
+        "value": "#2- username ve password u gönderin ve Login butonuna tıklatın."
+      },
+      {
+        "line": 4,
+        "value": "#3- Login olduğunuzu doğrulayın."
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 8,
+            "value": "#username ve password girerek login doğrulama"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 237600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "_04_Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "login-functionality;login-with-valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 5734114600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "_04_Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8586067600,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#siteyi aç - basgara a git"
+              }
+            ],
+            "line": 13,
+            "name": "Navigate to basqar",
+            "match": {
+              "location": "_01_LoginSteps.navigate_to_basqar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 969669100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 14,
+                "value": "#username ve passwordu gir ve login butonuna tıklat"
+              }
+            ],
+            "line": 15,
+            "name": "Enter username and password and click Login button",
+            "match": {
+              "location": "_01_LoginSteps.enter_username_and_password_and_click_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 16,
+                "value": "#Login olduğunu doğrula"
+              }
+            ],
+            "line": 17,
+            "name": "User should login successfully",
+            "match": {
+              "location": "_01_LoginSteps.user_should_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 9,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "_01_Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8267854200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Navigate to basqar",
+            "match": {
+              "location": "_01_LoginSteps.navigate_to_basqar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 851189800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter username and password and click Login button",
+            "match": {
+              "location": "_01_LoginSteps.enter_username_and_password_and_click_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should login successfully",
+            "match": {
+              "location": "_01_LoginSteps.user_should_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 131400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "_04_Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Create entrance exam",
+        "description": "",
+        "id": "entrance-exam-functionality;create-entrance-exam",
+        "after": [
+          {
+            "result": {
+              "duration": 5749617800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "_04_Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4355443700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on the element in the left class",
+            "match": {
+              "location": "_08_DataTableSteps.clickOnTheElementInTheLeftClass(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "entranceExamsParent"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "entranceExamsSetup"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "entranceExamsChild"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1005660300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on the element in the content class",
+            "match": {
+              "location": "_08_DataTableSteps.clickOnTheElementInTheContentClass(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "addButton"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 832339000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User sending the keys in the form content class",
+            "match": {
+              "location": "_09_EntranceExamSteps.userSendingTheKeysInTheFormContentClass(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nameInput",
+                  "ExamOneIsmet3"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1791909200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click in the new exam form",
+            "match": {
+              "location": "_09_EntranceExamSteps.clickInTheNewExamForm(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "academicPeriod"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "option1"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "gradeLevel"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "option1"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "documentType"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "option1"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "examsAddBtn"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "saveButton"
+                ],
+                "line": 30
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 946246200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Success message should be displayed",
+            "match": {
+              "location": "_02_CountrySteps.success_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1762457000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Click on the element in the left class",
+            "match": {
+              "location": "_08_DataTableSteps.clickOnTheElementInTheLeftClass(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "entranceExamsParent"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "entranceExamsSetup"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "entranceExamsChild"
+                ],
+                "line": 37
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2536622600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User delete the \"ExamOneIsmet3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ExamOneIsmet3",
+                  "offset": 17
+                }
+              ],
+              "location": "_03_CountryCreateEditDeleteSteps.user_delete_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 706386800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Success message should be displayed",
+            "match": {
+              "location": "_02_CountrySteps.success_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Entrance Exam functionality",
+    "description": "",
+    "id": "entrance-exam-functionality",
+    "keyword": "Feature",
+    "uri": "_09_EnteranceExam.feature"
+  }
+]
